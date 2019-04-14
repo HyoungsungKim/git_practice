@@ -2,6 +2,6 @@
 -export([hello/1]).
 
 hello(_) -> hello().
-hello() -> io:format("hello erlang~n").
+hello() -> io:format("hello erlang!~n").
 
 
