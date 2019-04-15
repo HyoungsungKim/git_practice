@@ -1,8 +1,12 @@
 -module(drop).
--export([fall_velocity/1]).
-fall_velocity({Planmo, Distance}) when element(2, {Planmo, Distance}) >= 0 ->
-    case element(1, {Planmo, Distance}) of
-    earth -> math:sqrt(element(2, {Planmo, Distance}) * 9.8);
-    mars -> math:sqrt(element(2, {Planmo, Distance}) * 4.9);
-    moon -> math:sqrt(element(2, {Planmo, Distance}) * 6.0)
+-export([drop/0]).
+drop() ->
+receive {From, Planemo, Distance} ->
+    From ! {Planemo, Distance, fall_velocity(Planemo, Distance)},
+    drop()
 end.
+
+fall_velocity(earth, Distance) when Distance >= 0 -> math:sqrt(2 * 9.8 * Distance);
+fall_velocity(moon, Distance) when Distance >= 0 -> math:sqrt(2 * 1.6 * Distance);
+fall_velocity(mars, Distance) when Distance >= 0 -> math:sqrt(2 * 3.71 * Distance).
+
