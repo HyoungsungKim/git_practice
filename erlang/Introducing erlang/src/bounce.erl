@@ -3,5 +3,5 @@
 
 report() ->
     receive
-        X -> io:format("Receive ~p~n", [X])
+        X -> io:format("Receive ~p~n", [X], report())
     end.
