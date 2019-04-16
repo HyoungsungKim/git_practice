@@ -14,7 +14,7 @@ vs code에서 커밋 하는 법 연습!
 ## Make a directory as remote repository
 
 > `git init`  
->If it is worked successfully, ".git " folder is generated in directory.
+>If it is worked successfully, ".git " folder will be generated in directory.
 
 ## Connect with remote repository
 
@@ -26,17 +26,24 @@ vs code에서 커밋 하는 법 연습!
 
 
 ## Upload file to remote storage
-
->`git add file_name -> git commit -m "message" -> git push remote_storage_name branch_name1`
 >
->Ex)  
+>```git
+>git add file_name
+>git commit -m "message"
+>git push remote_storage_name branch_name1
+>```  
+
+>Example)  
+>
+>```git
 >git add Hello_world.cpp  
 >git commit -m "cpp test"  
->git push origin master  
+>git push origin master 
+>```  
 
 ## Delete folder in remote repository
 
->`git rm -r --cached "Name of folder" -> git commit -m "Delete folder" -> git push remote_storage_name branch_name`  
+>`git rm -r --cached "a Name of folder" -> git commit -m "Delete the folder" -> git push remote_storage_name branch_name`  
 >It means delete commits in remote storage -> local folder is not deleted  
 >
 >Ex)  
