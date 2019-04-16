@@ -1,4 +1,4 @@
-# vscode-git-practice
+# git_practice
 
 Practice how to use git in vscode
 
