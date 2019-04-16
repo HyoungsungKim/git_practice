@@ -4,10 +4,10 @@ Practice how to use git in vscode
 
 vs code에서 커밋 하는 법 연습!  
 
-- [git init](##Make-a-directory-as-remote-repository)
-- [Connect with a remote repository](##Connect-with-remote-repository)
-- [Upload file to the remote storage](##Upload-file-to-remote-storage)
-- [Delete folder in the remote repository](##Delete-folder-in-remote-repository)
+- [git init](##make-a-directory-as-remote-repository)
+- [Connect with a remote repository](##connect-with-remote-repository)
+- [Upload file to the remote storage](##upload-file-to-remote-storage)
+- [Delete folder in the remote repository](##delete-folder-in-remote-repository)
 
 ----
 
