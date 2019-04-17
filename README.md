@@ -5,10 +5,11 @@ Practice how to use git in vscode
 - [First Of All - Initial setting](#first-of-all---initial-setting)
 - [Make a directory as remote repository - git init](#make-a-directory-as-remote-repository---git-initialization)
 - [Connect with a remote repository](#connect-with-remote-repository)
+- [Commit](##commit)
 - [Upload file to the remote repository](#upload-file-to-remote-repository)
 - Download from remote repository (To be written)
 - Change the name of repository (To be written)
-- [Delete folder in the remote repository](#delete-folder-in-remote-repository)
+- [Delete directory in the remote repository](#delete-directory-in-remote-repository)
 
 ----
 
@@ -48,6 +49,24 @@ Example) "origin" is default of remote_repository_name
 git remote add origin https://github.com/HyoungsungKim/vscode-git-practice.git
 ```
 
+## Commit
+
+```git
+git commit -m "content"
+```
+
+Amend commit
+```git
+git add file_name
+git commit --amend
+```
+
+Example)
+```git
+git add helloWorld.cpp
+git commit --amend
+```
+
 ## Upload file to remote repository
 
 ```git
@@ -64,20 +83,36 @@ git commit -m "cpp test"
 git push origin master
 ```  
 
-## Delete folder in remote repository
+## Delete directory in remote repository
 
 ```git
-git rm -r --cached "a Name of folder"
-git commit -m "Delete the folder"
+git rm -r --cached "a Name of directory"
+git commit -m "Delete the directory"
 git push remote_repository_name branch_name
 ```
 
-It means **delete a folder in the remote repository** -> local folder is not deleted
+It means **delete a directory in the remote repository** -> local directory is not deleted
 
 Example)
 
 ```git
-git rm -r --cached "WrongFolder"  
-git commit -m "This folder is Wrong folder"  
+git rm -r --cached "WrongDirectory"  
+git commit -m "This directory is Wrong directory"  
 git push origin master  
+```
+
+For **Delete directory from git and local**
+
+```git
+git rm -r directory_name
+git commit -m "some comment"
+git push remote_repository_name branch_name
+```
+
+Example)
+
+```git
+git rm -r directory
+git commit -m "It is wrong directory"
+git push origin master
 ```
