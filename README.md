@@ -56,12 +56,14 @@ git commit -m "content"
 ```
 
 Amend commit
+
 ```git
 git add file_name
 git commit --amend
 ```
 
 Example)
+
 ```git
 git add helloWorld.cpp
 git commit --amend
