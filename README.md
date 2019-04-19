@@ -2,14 +2,14 @@
 
 Practice how to use git in vscode
 
-- [First Of All - Initial setting](#first-of-all---initial-setting)
-- [Make a directory as remote repository - git init](#make-a-directory-as-remote-repository---git-initialization)
-- [Connect with a remote repository](#connect-with-remote-repository)
-- [Commit](##commit)
-- [Upload file to the remote repository](#upload-file-to-remote-repository)
-- Download from remote repository (To be written)
-- Change the name of repository (To be written)
-- [Delete directory in the remote repository](#delete-directory-in-remote-repository)
+- [git_practice](#gitpractice)
+  - [First Of All - Initial setting](#first-of-all---initial-setting)
+  - [Make a directory as remote repository - git initialization](#make-a-directory-as-remote-repository---git-initialization)
+  - [Connect with remote repository](#connect-with-remote-repository)
+  - [Commit](#commit)
+  - [Upload file to remote repository](#upload-file-to-remote-repository)
+  - [Change the name of repository or file](#change-the-name-of-repository-or-file)
+  - [Delete directory in remote repository](#delete-directory-in-remote-repository)
 
 ----
 
@@ -84,6 +84,18 @@ git add Hello_world.cpp
 git commit -m "cpp test"  
 git push origin master
 ```  
+
+## Change the name of repository or file
+
+```git 
+    git mv oldName newName
+```
+
+Example)
+
+```git
+    git mv hiWorld.cpp helloWorld.cpp
+```
 
 ## Delete directory in remote repository
 
