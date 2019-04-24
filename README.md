@@ -19,14 +19,14 @@ First of all, user have to do initial setting
 
 ```git
 git config --global user.name "User name"
-git config --global user.name User_Email
+git config --global user.email User_Email
 ```
 
 Example)
 
 ```git
 git config --global user.name "HS Kim"
-git config --global user.name rktkek456@gmail.com
+git config --global user.email rktkek456@gmail.com
 ```
 
 ## Make a directory as remote repository - git initialization
