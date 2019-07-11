@@ -5,6 +5,7 @@ Practice how to use git in vscode
 - [git_practice](#gitpractice)
   - [First Of All - Initial setting](#first-of-all---initial-setting)
   - [Make a directory as remote repository - git initialization](#make-a-directory-as-remote-repository---git-initialization)
+  - [Git clone](#git-clone)
   - [Connect with remote repository](#connect-with-remote-repository)
   - [Commit](#commit)
   - [Upload file to remote repository](#upload-file-to-remote-repository)
@@ -36,6 +37,32 @@ git init
 ```
 
 If it is worked successfully, ".git" folder will be generated in directory.
+
+## Git Clone
+
+```
+git clone repository_name remote_url.git  
+```
+
+example)
+
+```
+git clone https://github.com/HyoungsungKim/vscode-git-practice.git
+```
+
+Clone specific branch
+
+```
+git clone -b branch_name --single-branch
+```
+
+example)
+
+```
+git clone -b some_brabch --single-branch https://github.com/HyoungsungKim/vscode-git-practice.git
+```
+
+
 
 ## Connect with remote repository
 
@@ -75,7 +102,7 @@ git commit --amend
 git add file_name
 git commit -m "message"
 git push remote_repository_name branch_name1
-```  
+```
 
 Example)
 
@@ -83,7 +110,7 @@ Example)
 git add Hello_world.cpp  
 git commit -m "cpp test"  
 git push origin master
-```  
+```
 
 ## Change the name of repository or file
 
