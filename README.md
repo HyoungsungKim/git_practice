@@ -53,13 +53,13 @@ git clone https://github.com/HyoungsungKim/vscode-git-practice.git
 Clone specific branch
 
 ```
-git clone -b branch_name --single-branch
+git clone -b branch_name --single-branch branch_url.git
 ```
 
 example)
 
 ```
-git clone -b some_brabch --single-branch https://github.com/HyoungsungKim/vscode-git-practice.git
+git clone -b some_branch --single-branch https://github.com/HyoungsungKim/vscode-git-practice.git
 ```
 
 
