@@ -7,7 +7,7 @@ Practice how to use git in vscode
   - [Make a directory as remote repository - git initialization](#make-a-directory-as-remote-repository---git-initialization)
   - [Git clone](#git-clone)
   - [Connect with remote repository](#connect-with-remote-repository)
-  - [When I want to add others' source code in my project](#when-i-want-to-add-others'-source-code-in-my-project)
+  - [When I want to add others source code in my project](#when-i-want-to-add-others-source-code-in-my-project)
   - [Commit](#commit)
   - [Upload file to remote repository](#upload-file-to-remote-repository)
   - [Change the name of repository or file](#change-the-name-of-repository-or-file)
@@ -77,7 +77,7 @@ Example) "origin" is default of remote_repository_name
 git remote add origin https://github.com/HyoungsungKim/vscode-git-practice.git
 ```
 
-## When I want to add others' source code in my project
+## When I want to add others source code in my project
 
 ```
 git submodule add sourcecode_repository_url.git
