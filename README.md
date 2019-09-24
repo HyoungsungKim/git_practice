@@ -12,6 +12,7 @@ Practice how to use git in vscode
   - [Upload file to remote repository](#upload-file-to-remote-repository)
   - [Change the name of repository or file](#change-the-name-of-repository-or-file)
   - [Delete directory in remote repository](#delete-directory-in-remote-repository)
+  - [Update forked repository](#update-forked-repository)
 
 ----
 
@@ -170,3 +171,23 @@ git rm -r directory
 git commit -m "It is wrong directory"
 git push origin master
 ```
+
+## Update forked repository
+
+```git
+// Check remote 
+git remote -v
+// If repo is not remoted,
+git remote add upstream repository.git
+
+// Download the latest version branches
+git fetch upstream
+
+// Option 1
+git merge upstream/some_branch
+
+// Option 2 It needs force push
+git checkout upstream/some_branch
+git checkout -b My_Own_branch
+```
+
