@@ -1,6 +1,6 @@
 # git_practice
 
-Practice how to use git in vscode
+Practice how to use git
 
 - [git_practice](#gitpractice)
   - [First Of All - Initial setting](#first-of-all---initial-setting)
